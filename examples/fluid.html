@@ -23,6 +23,8 @@
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 	
+	<script src="../js/jquery-1.7.js"></script>
+	<script src="../js/bootstrap-modal.js"></script>
   
   </head>
 
@@ -136,24 +138,30 @@
 		</div>
 		
 		
-		<!-- WHERE 
-		==================================== -->
+		<!-- WHERE ---- -->
 		
 		<div class="row">
 			<div class="span-one-third">
-				<h3>Where</h3>
-				
-				<a href="#small_box" id="small">Small Box!</a>
-<div id="small_box">
-  <p>Here is the contents that will appear in the zoom.</p>
+<!-- modal content -->			
+<!-- class= modal hide fade and style set to "display:none" to hide on page load until clicked -->
+	<div id="my-modal" class="modal hide fade" style="display: none;">
+		<div class="modal-header">
+			<a href="#" class="close">&times;</a>
+			<h3>Hyde Park Gym</h3>
+		</div>
+		<div class="modal-body">
+		<!-- google map to hyde park gym -->
+			<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=hyde+park+gym&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=43.848534,60.732422&amp;vpsrc=0&amp;ie=UTF8&amp;hq=hyde+park+gym&amp;hnear=&amp;t=m&amp;ll=30.306448,-97.735668&amp;spn=0.071946,0.071946&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=hyde+park+gym&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=43.848534,60.732422&amp;vpsrc=0&amp;ie=UTF8&amp;hq=hyde+park+gym&amp;hnear=&amp;t=m&amp;ll=30.306448,-97.735668&amp;spn=0.071946,0.071946" style="color:#0000FF;text-align:left">View Larger Map</a></small>>
+		</div>
+		<div class="modal-footer">
+			<a href="#" class="btn primary">Primary</a>
+			<a href="#" class="btn secondary">Secondary</a>
+		</div>
+	</div>
+	
+	<button class="btn" data-controls-modal="my-modal" data-backdrop="true" data-keyboard="true">Where</button>
 </div>
-<script type="text/javascript">
-	$('#small').fancyZoom();
-</script>
-
-				<a class="btn primary" id="where-modal">Here</a>				
-			</div>
-		</div>			
+</div> 
 	</section>		
 	
 	
@@ -202,22 +210,20 @@
           <p>&copy; Company 2011</p>
         </footer>
       </div>
-      	<div id="my-modal" class="modal hide fade" style="display: none;">
-<div class="modal-header">
-<a class="close" href="#">×</a>
-<h3>Modal Heading</h3>
-</div>
-<div class="modal-body">
-<p>One fine body…</p>
-</div>
-<div class="modal-footer">
-<a class="btn primary" href="#">Primary</a>
-<a class="btn secondary" href="#">Secondary</a>
-</div>
-</div>
-    <script src="../js/bootstrap-modal.js">
-	</script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script> 
-<script type="text/javascript" src="js/fancyzoom.js"></script>
+<!-- -------------MODAL CONTENT ----------------------------------> 
+<!-- <div id="my-modal" class="modal hide fade" style="display: none;">	<div class="modal-header">
+		<a class="close" href="#">×</a>
+		<h3>Modal Heading</h3>
+	</div>
+	<div class="modal-body">
+		<p>One fine body…</p>
+	</div>
+	<div class="modal-footer">
+		<a class="btn primary" href="#">Primary</a>
+		<a class="btn secondary" href="#">Secondary</a>
+	</div>
+</div> -->
+<!-- ---------end MODAL Content------------- -->
+    
   </body>
 </html>
